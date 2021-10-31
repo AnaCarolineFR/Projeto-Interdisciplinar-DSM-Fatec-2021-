@@ -100,7 +100,7 @@ nav{
 #conteudo{
     width: 100%;
     height: 100%;
-    min-height: 600px;
+    min-height: 500px;
     font-family: Arial, Helvetica, sans-serif;
     text-align:center;
     background-image:url('fotoFatec.png');
@@ -108,7 +108,7 @@ nav{
     background-size: 100%;
 }
 section{
-    padding: 3%;
+    padding-top: 20%;
 
 }
 #rodape{
@@ -136,7 +136,7 @@ section{
     margin-right: auto;
     margin-top:0%;
     margin-bottom: 0%;
-    
+
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
