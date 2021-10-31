@@ -28,16 +28,6 @@ body{
 }
 
 header h1{
-    
-   /* display: inline;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;*/
-    
-   
 
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
@@ -49,7 +39,6 @@ header h1{
     display: inline;
     padding: 40px 30px;
     padding-bottom: 100px;
-
 
 }
 
@@ -90,6 +79,7 @@ nav{
 #menu li a:hover{
     background-color: #000000;
     transition: 1s;
+    
 }
 #menu li ul{
     position: absolute;
@@ -109,14 +99,17 @@ nav{
 }
 #conteudo{
     width: 100%;
+    height: 100%;
     min-height: 600px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    text-align: justify;
-    background-color: #fff;
+    text-align:center;
+    background-image:url('fotoFatec.png');
+    background-repeat:no-repeat;
+    background-size: 100%;
 }
 section{
     padding: 3%;
+
 }
 #rodape{
     font-family: Arial, Helvetica, sans-serif;
@@ -132,49 +125,39 @@ section{
 .imagem-principal{
     display: flex;
     width: 100%;
-    height: 50%;
-    
+    height: 100%;
 }
 
-#caixa2{
-    background-color: #bc0003;
-    width: 70%;
-    position:absolute;
-    display: block;
-    bottom: 330px;
-    right: 300px;
-    left: 230px;
-    border-radius: 4px;
-    Offset: 0px, 4px;
-    color: #fff;
+.parent {
+    
+    width: 60%;
+    position:static;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0%;
+    margin-bottom: 0%;
+    
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-  
-
-}
-
-#caixa2-direita{
-    text-align: right;
- 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 2px;
+    }
     
-}
+    .div1 { grid-area: 1 / 1 / 2 / 2;
+        background-color: #bc0003;
+        color: #fff; }
+    .div2 { grid-area: 1 / 2 / 2 / 3;
+        background-color: #bc0003;
+        color: #fff; }
+    .div3 { grid-area: 2 / 1 / 3 / 2;
+        background-color: #E5E5E5; }
+    .div4 { grid-area: 2 / 2 / 3 / 3;background-color: #E5E5E5; }
 
-#caixa2-esquerda{
-    text-align: left;    
 
-}
 
-#caixa{
-    background-color: #E5E5E5;
-    width: 70%;
-    position: fixed;
-    /*z-index: 1;*/
-    bottom: 266px;
-    right: 300px;
-    left: 230px;
-    display: block;
-    border-radius: 4px;
-    Offset: 0px, 4px;
 
-}
+
 
