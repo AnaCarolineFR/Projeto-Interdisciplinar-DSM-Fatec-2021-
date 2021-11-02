@@ -177,6 +177,8 @@ section {
 }
 
 .icone_rede {
+    padding-top: 1%;
+    padding-left: 1%;
     width: 43px;
     height: 43px;
     filter: saturate(3);
@@ -199,16 +201,19 @@ section {
 }
 
 .grid_rede_social {
+    padding-top:4%;
+    padding-left:15%;
     grid-area: 1 / 1 / 2 / 2;
 }
 
 .grid_nome_unidade {
+    padding-top: 4%;
     grid-area: 1 / 2 / 2 / 3;
 }
 
 .grid_desenvolvido {
     grid-area: 2 / 1 / 3 / 3;
     margin-left: 20%;
-    padding-bottom: 1%;
+    padding-bottom: 5%;
 
 }
