@@ -131,6 +131,102 @@ nav {
 
 section {
     padding-top: 10%;
+    padding: 3%;
+}
+
+.breadcrumb{
+    padding-top: 35px;
+    padding-left: 20px;
+    list-style: none;
+}
+.breadcrumb li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #000;
+}
+.breadcrumb li a{
+    color: #3e3e3e;
+    text-decoration: none;
+}
+.breadcrumb li+li::before{
+    content: "/\00a0";
+    padding: 6px;
+    color: #000;
+}
+.breadcrumb li a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+
+fieldset {
+    border-radius: 15px;
+    border-color: #000000;
+    width: 630px;
+    margin-left: 25%;
+}
+
+legend {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 8%;
+    margin-right: 2%;
+}
+
+#nome   {margin-top: 2%; margin-left: 80px;}
+#ra     {margin-top: 2%; margin-left: 166px;}
+#curso  {margin-top: 2%; margin-left: 92px;}
+#email  {margin-top: 2%; margin-left: 145px;}
+#celular{margin-top: 2%; margin-bottom: 2%; margin-left: 140px;}
+
+#mensagem {
+    margin-top: -15px;
+    margin-bottom: 4%;
+    margin-left: 254px;
+    width: 51%;
+    height: 100px;
+    border-radius: 15px;
+}
+
+#ckb_declaracao {
+    margin-left: -108%;
+    margin-right: -30%;
+}
+
+#declaracao {
+    margin-top: -3%;
+    margin-left: 12%;
+    margin-right: 6%;
+}
+
+input {
+    border-radius: 15px;
+    padding: 2px;
+    width: 50%;
+}
+
+#enviar{
+    margin-left: 390px;
+    width: 15%;
+    height: 30px;
+    background-color: #3e3e3e;
+    color: white;
+}
+
+#limpar{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 15%;
+    height: 30px;
+    background-color: #3e3e3e;
+    color: white;
 }
 
 #rodape {
@@ -191,8 +287,6 @@ section {
     border-style: inset;
     border-bottom-style: none;
 }
-
-
 
 .div3 {
     margin-left: auto;
@@ -283,3 +377,30 @@ section {
   .question input:checked ~ .answer {
     display: block
   }
+
+@media screen and (max-width: 1140px) {
+    header h1 {
+        font-size: 25px;
+    }
+    fieldset {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    header h1 {
+        font-size: 20px;
+    }
+    fieldset {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    header h1 {
+        font-size: 15px;
+    }
+    fieldset {
+        margin-left: 5%;
+    }
+}
